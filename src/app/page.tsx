@@ -44,15 +44,20 @@ export default function Home() {
           </Button>
         )}
         {showVideo && (
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=ge49b_T4Th4NovFh"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+          <div className="flex flex-col">
+            <div className="font-mono text-sm lg:flex">
+              {`You came here too early, I'm still working on this`}
+            </div>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=ge49b_T4Th4NovFh?autoplay=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="autoplay"
+              allowfullscreen
+            ></iframe>
+          </div>
         )}
       </div>
     </main>
