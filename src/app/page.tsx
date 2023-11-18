@@ -1,8 +1,12 @@
+"use client";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 export default function Home() {
   const linkedin = "https://www.linkedin.com/in/reddy-tintaya/";
+  const [showVideo, setShowVideo] = useState(false);
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -29,7 +33,27 @@ export default function Home() {
       </div>
 
       <div className="fixed flex items-center justify-center w-full h-full">
-        <Button color="primary">Click here</Button>
+        {!showVideo && (
+          <Button
+            color="primary"
+            onClick={() => {
+              setShowVideo(!showVideo);
+            }}
+          >
+            Click here
+          </Button>
+        )}
+        {showVideo && (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=ge49b_T4Th4NovFh"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        )}
       </div>
     </main>
   );
