@@ -21,8 +21,8 @@ export default function Home() {
           >
             By{" reddytocode"}
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
+              src="/images/reddytocode.svg"
+              alt="Reddy tocode logo"
               className="dark:invert"
               width={40}
               height={10}
