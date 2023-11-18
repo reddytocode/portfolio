@@ -45,15 +45,19 @@ export default function Home() {
         )}
         {showVideo && (
           <div>
-            <div className="font-mono text-sm lg:flex mb-2">
-              {`Oh sorry, You came here too early, I'm still working on this. 👷🏽‍♂️`}
+            <div className="flex justify-center">
+              <div className="max-w-xs">
+                <p className="font-mono whitespace-pre-line mb-5 text-center">
+                  {`Oh sorry, You came here too early, I'm still working on this. 👷🏽‍♂️`}
+                </p>
+              </div>
             </div>
             <iframe
               width="560"
               height="315"
               src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=ge49b_T4Th4NovFh&autoplay=1"
               title="YouTube video player"
-              allow="autoplay"
+              allow="autoplay; controls;"
             ></iframe>
           </div>
         )}
