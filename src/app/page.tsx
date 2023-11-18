@@ -29,9 +29,7 @@ export default function Home() {
       </div>
 
       <div className="fixed flex items-center justify-center w-full h-full">
-        <Button color="primary" variant="bordered">
-          Click here
-        </Button>
+        <Button color="primary">Click here</Button>
       </div>
     </main>
   );
